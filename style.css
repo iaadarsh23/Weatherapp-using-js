@@ -1,19 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    
-}
-body{
-    background-image: url(images/pexels-pixabay-531756.jpg);
-     background-size: cover;
 }
 
-.card{
+body {
+    background-image: url(images/pexels-pixabay-531756.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card {
     width: 90%;
     max-width: 470px;
-    background-image: linear-gradient(  #000000, #0151ff);
+    background-image: linear-gradient(#000000, #0151ff);
     margin: 100px auto 0;
     padding: 40px 35px;
     padding-bottom: 20px;
@@ -22,12 +23,12 @@ body{
     text-align: center;
     opacity: 0.8;
     transition: opacity 0.3s ease-in-out;
-    border: 2px solid rgb(0, 0, 0); /* Add this line to make the border edges more visible */
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .card:hover {
-     opacity: 1;
-     color: violet;
+    opacity: 1;
+    color: violet;
 }
 
 .title {
@@ -40,6 +41,7 @@ body{
     padding-bottom: 10px;
     cursor: pointer;
 }
+
 .title:hover {
     padding-top: 10px;
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
@@ -48,21 +50,22 @@ body{
     color: rgb(255, 0, 0);
 }
 
-.search{
+.search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
-.search:hover{
+
+.search:hover {
     box-shadow: #000000;
     transition: box-shadow 0.3s ease-in-out;
 }
-.search input{
+
+.search input {
     border: 0;
     outline: 0;
-   background: #ffffff;
+    background: #ffffff;
     color: #000000;
     padding: 10px 25px;
     height: 60px;
@@ -71,15 +74,16 @@ body{
     margin-right: 16px;
     font-size: 18px;
 }
-/* --------------------Decreasing the size of the search image----------------- */
+
 .search img {
     width: 30px;
-    height: 30px; 
+    height: 30px;
 }
-.search button{
+
+.search button {
     border: 0;
     outline: 0;
-   background: wheat;
+    background: wheat;
     color: #000000;
     cursor: pointer;
     width: 50px;
@@ -87,25 +91,29 @@ body{
     border: 1px solid #000000;
     border-radius: 20px;
 }
-.weather-icon{ 
+
+.weather-icon {
     margin-top: 80px;
     align-items: center;
 }
-.Weather h1{
+
+.Weather h1 {
     color: rgb(255, 255, 255);
-    font-size:60px;
+    font-size: 60px;
     padding-top: 10px;
     font-weight: 500;
     cursor: pointer;
 }
-.Weather h2{
+
+.Weather h2 {
     color: rgb(255, 255, 255);
     padding-top: 20px;
     font-size: 45px;
     font-weight: 500;
     cursor: pointer;
 }
-.details{
+
+.details {
     display: flex;
     justify-content: space-between;
     margin-top: 140px;
@@ -113,31 +121,88 @@ body{
     padding: 0 10px;
 }
 
-
-.col1 p{
+.col1 p {
     font-size: 20px;
     color: rgb(255, 255, 255);
     font-weight: 500;
     cursor: pointer;
 }
-.col1 .humidity{
+
+.col1 .humidity {
     font-size: 30px;
     color: rgb(255, 255, 255);
     font-weight: 500;
     cursor: pointer;
 }
-.col2 p{
+
+.col2 p {
     font-size: 20px;
     color: rgb(255, 255, 255);
     font-weight: 500;
     cursor: pointer;
 }
-.col2 .Wind-speed{
+
+.col2 .Wind-speed {
     font-size: 28px;
     color: rgb(255, 255, 255);
     font-weight: 500;
     cursor: pointer;
 }
-.Weather{
+
+.Weather {
     display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: none;
+        margin: 50px auto 0;
+        padding: 30px 25px;
+        border-radius: 20px;
+    }
+
+    .search input {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .search img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Weather h1 {
+        font-size: 40px;
+    }
+
+    .Weather h2 {
+        font-size: 30px;
+    }
+
+    .details {
+        margin-top: 80px;
+    }
+
+    .col1 p {
+        font-size: 16px;
+    }
+
+    .col1 .humidity {
+        font-size: 24px;
+    }
+
+    .col2 p {
+        font-size: 16px;
+    }
+
+    .col2 .Wind-speed {
+        font-size: 22px;
+    }
 }
